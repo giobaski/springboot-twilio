@@ -15,9 +15,7 @@ public class Controller {
     private final Service service;
 
     @Autowired
-    public Controller(Service service) {
-        this.service = service;
-    }
+    public Controller(Service service) { this.service = service; }
 
     @PostMapping
     public void sendSms(@Valid @RequestBody SmsRequest smsRequest) {
